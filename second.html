@@ -789,6 +789,21 @@ document.write(`
 <img alt="_images/49af721b6126312b647ec362d4127d583d579d5ae7cabb70e24c93160e790074.png" src="_images/49af721b6126312b647ec362d4127d583d579d5ae7cabb70e24c93160e790074.png" />
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s1">: Manufacturing vs total value addded&#39;</span><span class="p">)</span>
+<span class="n">df_scatter</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Australia&#39;</span><span class="p">,</span><span class="s1">&#39;Spain&#39;</span><span class="p">])]</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_scatter</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Manufacturing (ISIC D)&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Total Value Added&#39;</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: title={&#39;center&#39;: &#39;Australia: Manufacturing vs total value addded&#39;}, xlabel=&#39;Manufacturing (ISIC D)&#39;, ylabel=&#39;Total Value Added&#39;&gt;
+</pre></div>
+</div>
+<img alt="_images/abccd1a11bce26fe3acb6f60d65af5327f0426c9043c060866be71f5b705f7c6.png" src="_images/abccd1a11bce26fe3acb6f60d65af5327f0426c9043c060866be71f5b705f7c6.png" />
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
