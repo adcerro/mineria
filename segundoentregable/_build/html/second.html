@@ -804,6 +804,21 @@ document.write(`
 <img alt="_images/abccd1a11bce26fe3acb6f60d65af5327f0426c9043c060866be71f5b705f7c6.png" src="_images/abccd1a11bce26fe3acb6f60d65af5327f0426c9043c060866be71f5b705f7c6.png" />
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">variables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span><span class="s1">&#39; Agriculture, hunting, forestry, fishing (ISIC A-B) &#39;</span><span class="p">,</span><span class="s1">&#39; Mining, Manufacturing, Utilities (ISIC C-E) &#39;</span><span class="p">,</span><span class="s1">&#39;Manufacturing (ISIC D)&#39;</span><span class="p">]</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_scatter</span><span class="p">[</span><span class="n">variables</span><span class="p">],</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">g</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">flatten</span><span class="p">():</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_xlabel</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_ylabel</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/73a6e9ca0f40caa18033510114e5d2ab15a9479595a79b6145734400468fbe79.png" src="_images/73a6e9ca0f40caa18033510114e5d2ab15a9479595a79b6145734400468fbe79.png" />
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
