@@ -819,6 +819,27 @@ document.write(`
 <img alt="_images/73a6e9ca0f40caa18033510114e5d2ab15a9479595a79b6145734400468fbe79.png" src="_images/73a6e9ca0f40caa18033510114e5d2ab15a9479595a79b6145734400468fbe79.png" />
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="mi">2021</span>
+<span class="n">df_bar2</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">year</span><span class="p">]</span>
+<span class="n">df_bar2</span> <span class="o">=</span> <span class="n">df_bar2</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">countries</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">20</span><span class="p">])]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;GDP in </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_bar2</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Gross Domestic Product (GDP)&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\aland\AppData\Local\Temp\ipykernel_12808\491066970.py:3: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  df_bar2 = df_bar2[df[&#39;Country&#39;].isin(countries[0:20])]
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: title={&#39;center&#39;: &#39;GDP in 2021&#39;}, xlabel=&#39;Gross Domestic Product (GDP)&#39;, ylabel=&#39;Country&#39;&gt;
+</pre></div>
+</div>
+<img alt="_images/453cc3c1a82b908995ba9399476f9fb6263c9135665cc7d3bb5c7be6abe9addc.png" src="_images/453cc3c1a82b908995ba9399476f9fb6263c9135665cc7d3bb5c7be6abe9addc.png" />
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
