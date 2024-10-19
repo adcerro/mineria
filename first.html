@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Data visualization &#8212; My sample book</title>
+    <title>WORLD ECONOMY DATASET &#8212; My sample book</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'second';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'first';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Migration to BigQuery" href="third.html" />
-    <link rel="prev" title="WORLD ECONOMY DATASET" href="first.html" />
+    <link rel="next" title="Data visualization" href="second.html" />
+    <link rel="prev" title="Welcome to our Project" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,8 +180,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="first.html"><strong>WORLD ECONOMY DATASET</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Data visualization</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>WORLD ECONOMY DATASET</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="second.html">Data visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="third.html">Migration to BigQuery</a></li>
 </ul>
 
@@ -254,7 +254,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsecond.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ffirst.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +284,7 @@
       
       
       
-      <li><a href="_sources/second.ipynb" target="_blank"
+      <li><a href="_sources/first.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -355,7 +355,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -366,11 +368,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Data visualization</h1>
+    <h1>WORLD ECONOMY DATASET</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-this-dataset">Why Use This Dataset?</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -380,14 +391,254 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="data-visualization">
-<h1>Data visualization<a class="headerlink" href="#data-visualization" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="world-economy-dataset">
+<h1><strong>WORLD ECONOMY DATASET</strong><a class="headerlink" href="#world-economy-dataset" title="Link to this heading">#</a></h1>
+<p><strong>Project Selection</strong></p>
+<hr class="docutils" />
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
+<p>The dataset is compiled from the National Accounts Main Aggregates Database that presents a series of analytical national accounts tables from 1970 onwards for more than 200 countries and areas of the world. It is the product of a global cooperation effort between the Economic Statistics Branch of the United Nations Statistics Division, international statistical agencies, and the national statistical services of these countries and is developed in accordance with the recommendation of the Statistical Commission at its first session in 1947</p>
+</section>
+<section id="why-use-this-dataset">
+<h2>Why Use This Dataset?<a class="headerlink" href="#why-use-this-dataset" title="Link to this heading">#</a></h2>
+<p>This dataset is highly valuable due to its comprehensive scope, covering more than 200 countries and areas with data from 1970 onwards, making it a robust tool for long-term economic analysis. It is developed through global collaboration between the United Nations, international agencies, and national statistical services, ensuring the reliability and consistency of the data across diverse regions. Following international recommendations, the dataset is standardized, which makes it ideal for comparing economic performance across countries and time periods. Researchers, policymakers, and analysts can use this dataset to gain insights into global economic trends, conduct comparative studies, and inform decisions in areas such as economic policy, development, and international finance.</p>
+<p><strong>Code Section</strong></p>
+<hr class="docutils" />
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://docs.google.com/spreadsheets/d/1hE-XvGz0-AChRUazHiAu1ilheRvMEh9xBG3mCaWMXEo/export?format=csv&#39;</span><span class="p">)</span>
-<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://docs.google.com/spreadsheets/d/1PfnTNbKRkPTeK9PYoIzxpIqzNSFp4Bh0DhAzAYOyjIk/export?format=csv&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_PaisesEco</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">df_PaisesEco</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39; CountryID &#39;, &#39; Country &#39;, &#39; Year &#39;, &#39; IMF based exchange rate &#39;,
+       &#39; Population &#39;, &#39; Currency &#39;, &#39; Per capita GNI &#39;,
+       &#39; Agriculture, hunting, forestry, fishing (ISIC A-B) &#39;,
+       &#39; Changes in inventories &#39;, &#39; Construction (ISIC F) &#39;,
+       &#39; Exports of goods and services &#39;, &#39; Final consumption expenditure &#39;,
+       &#39; General government final consumption expenditure &#39;,
+       &#39; Gross capital formation &#39;,
+       &#39; Gross fixed capital formation (including Acquisitions less disposals of valuables) &#39;,
+       &#39; Household consumption expenditure (including Non-profit institutions serving households) &#39;,
+       &#39; Imports of goods and services &#39;, &#39; Manufacturing (ISIC D) &#39;,
+       &#39; Mining, Manufacturing, Utilities (ISIC C-E) &#39;,
+       &#39; Other Activities (ISIC J-P) &#39;, &#39; Total Value Added &#39;,
+       &#39; Transport, storage and communication (ISIC I) &#39;,
+       &#39; Wholesale, retail trade, restaurants and hotels (ISIC G-H) &#39;,
+       &#39; Gross National Income(GNI) in USD &#39;,
+       &#39; Gross Domestic Product (GDP) &#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#summarize</span>
+<span class="k">def</span> <span class="nf">summarize_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">num_observations</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">num_variables</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of observations: </span><span class="si">{</span><span class="n">num_observations</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of variables: </span><span class="si">{</span><span class="n">num_variables</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Data Types</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Data Types:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+
+    <span class="c1"># General infroamtion about the dataset</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Summary Statistics:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+
+<span class="n">summarize_dataset</span><span class="p">(</span><span class="n">df_PaisesEco</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of observations: 10512
+Number of variables: 25
+
+Data Types:
+CountryID                                                                                      int64
+Country                                                                                       object
+Year                                                                                           int64
+IMF based exchange rate                                                                        int64
+Population                                                                                     int64
+Currency                                                                                      object
+Per capita GNI                                                                                 int64
+Agriculture, hunting, forestry, fishing (ISIC A-B)                                           float64
+Changes in inventories                                                                       float64
+Construction (ISIC F)                                                                          int64
+Exports of goods and services                                                                float64
+Final consumption expenditure                                                                float64
+General government final consumption expenditure                                             float64
+Gross capital formation                                                                      float64
+Gross fixed capital formation (including Acquisitions less disposals of valuables)           float64
+Household consumption expenditure (including Non-profit institutions serving households)     float64
+Imports of goods and services                                                                float64
+Manufacturing (ISIC D)                                                                       float64
+Mining, Manufacturing, Utilities (ISIC C-E)                                                    int64
+Other Activities (ISIC J-P)                                                                  float64
+Total Value Added                                                                            float64
+Transport, storage and communication (ISIC I)                                                float64
+Wholesale, retail trade, restaurants and hotels (ISIC G-H)                                   float64
+Gross National Income(GNI) in USD                                                            float64
+Gross Domestic Product (GDP)                                                                 float64
+dtype: object
+
+Summary Statistics:
+         CountryID          Year   IMF based exchange rate    Population   \
+count  10512.000000  10512.000000              1.051200e+04  1.051200e+04   
+mean     431.116629   1996.262747              1.923770e+09  2.851523e+07   
+std      251.169090     14.900361              2.510252e+09  1.141296e+08   
+min        4.000000   1970.000000              0.000000e+00  4.359000e+03   
+25%      212.000000   1984.000000              1.117510e+05  6.330615e+05   
+50%      430.000000   1997.000000              8.845954e+08  5.051556e+06   
+75%      643.000000   2009.000000              2.821069e+09  1.678862e+07   
+max      894.000000   2021.000000              1.000000e+10  1.425893e+09   
+
+       Per capita GNI   Agriculture, hunting, forestry, fishing (ISIC A-B)   \
+count     10512.000000                                       1.039100e+04     
+mean       8965.564593                                       2.966758e+11     
+std       17070.205895                                       3.906697e+12     
+min          34.000000                                       2.813900e+04     
+25%         730.000000                                       1.304522e+08     
+50%        2316.500000                                       9.313674e+08     
+75%        8965.750000                                       4.023326e+09     
+max      234317.000000                                       1.350000e+14     
+
+       Changes in inventories   Construction (ISIC F)   \
+count             8.671000e+03            1.051200e+04   
+mean              2.429002e+10            5.602951e+11   
+std               6.454818e+11            4.883999e+12   
+min              -1.510000e+13            1.577280e+05   
+25%               4.673545e+05            6.815523e+07   
+50%               6.829635e+07            3.717701e+08   
+75%               6.910750e+08            2.815730e+09   
+max               2.110000e+13            1.240000e+14   
+
+       Exports of goods and services   Final consumption expenditure   ...  \
+count                    1.049100e+04                    1.051200e+04  ...   
+mean                     3.819271e+12                    1.249474e+13  ...   
+std                      1.758540e+13                    7.568823e+13  ...   
+min                     -1.669759e+09                    2.043926e+06  ...   
+25%                      4.026725e+08                    1.209824e+09  ...   
+50%                      2.407906e+09                    6.523676e+09  ...   
+75%                      1.542492e+10                    3.783631e+10  ...   
+max                      3.530000e+14                    1.930000e+15  ...   
+
+       Household consumption expenditure (including Non-profit institutions serving households)   \
+count                                       1.046000e+04                                           
+mean                                        9.543034e+12                                           
+std                                         6.051617e+13                                           
+min                                         7.960260e+05                                           
+25%                                         9.389897e+08                                           
+50%                                         5.154424e+09                                           
+75%                                         3.008905e+10                                           
+max                                         1.590000e+15                                           
+
+       Imports of goods and services   Manufacturing (ISIC D)   \
+count                    1.047000e+04             1.046900e+04   
+mean                     3.693796e+12             2.404949e+12   
+std                      1.814016e+13             1.726273e+13   
+min                      1.982159e+06            -2.484990e+05   
+25%                      5.891469e+08             1.109497e+08   
+50%                      2.891919e+09             9.113543e+08   
+75%                      1.602312e+10             7.405364e+09   
+max                      3.400000e+14             4.870000e+14   
+
+       Mining, Manufacturing, Utilities (ISIC C-E)   \
+count                                  1.051200e+04   
+mean                                   3.312488e+12   
+std                                    2.118333e+13   
+min                                   -2.581190e+06   
+25%                                    1.857038e+08   
+50%                                    1.597027e+09   
+75%                                    1.251358e+10   
+max                                    5.780000e+14   
+
+       Other Activities (ISIC J-P)   Total Value Added   \
+count                  1.051200e+04        1.051200e+04   
+mean                   6.676242e+12        1.633859e+13   
+std                    4.848626e+13        9.762646e+13   
+min                    1.044040e+06        2.411113e+06   
+25%                    3.555891e+08        1.355670e+09   
+50%                    2.107421e+09        7.493971e+09   
+75%                    1.442130e+10        4.819144e+10   
+max                    1.290000e+15        2.330000e+15   
+
+       Transport, storage and communication (ISIC I)   \
+count                                    1.046300e+04   
+mean                                     1.037785e+12   
+std                                      9.151829e+12   
+min                                     -6.479048e+06   
+25%                                      8.998828e+07   
+50%                                      5.441500e+08   
+75%                                      3.975893e+09   
+max                                      2.490000e+14   
+
+       Wholesale, retail trade, restaurants and hotels (ISIC G-H)   \
+count                                       1.046300e+04             
+mean                                        1.850800e+12             
+std                                         1.392399e+13             
+min                                         2.302090e+05             
+25%                                         2.078732e+08             
+50%                                         1.056493e+09             
+75%                                         6.707456e+09             
+max                                         3.520000e+14             
+
+       Gross National Income(GNI) in USD   Gross Domestic Product (GDP)   
+count                        1.051200e+04                   1.051200e+04  
+mean                         1.713312e+13                   1.716153e+13  
+std                          9.959472e+13                   9.863623e+13  
+min                          3.564833e+06                   2.585174e+06  
+25%                          1.410772e+09                   1.439217e+09  
+50%                          7.887233e+09                   8.070572e+09  
+75%                          5.005789e+10                   5.172596e+10  
+max                          2.360000e+15                   2.330000e+15  
+
+[8 rows x 23 columns]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Variables to be worked on</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Before doing the process of analyzing, appending or matching with external data, we will proceed to clean the data and process the NA’s in a proper way.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">clean_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://docs.google.com/spreadsheets/d/1hE-XvGz0-AChRUazHiAu1ilheRvMEh9xBG3mCaWMXEo/export?format=csv#gid=186576549&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">clean_df</span>
 </pre></div>
 </div>
 </div>
@@ -705,143 +956,37 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">countries</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="n">df_line</span> <span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">countries</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])]</span>
-<span class="n">df_line</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_line</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Gross Domestic Product (GDP)&#39;</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;Year&#39;, ylabel=&#39;Gross Domestic Product (GDP)&#39;&gt;
-</pre></div>
-</div>
-<img alt="_images/8f1ce76352b9e31e34bdf1e778ffc0f5827eb4f8b3691f3a78f83ec29d307769.png" src="_images/8f1ce76352b9e31e34bdf1e778ffc0f5827eb4f8b3691f3a78f83ec29d307769.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_line</span> <span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">countries</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">10</span><span class="p">])]</span>
-<span class="n">df_line</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_line</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Gross Domestic Product (GDP)&#39;</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Seleccionar las columnas &#39;Country&#39; y &#39;Population&#39;</span>
+<span class="n">historical_population_country</span> <span class="o">=</span> <span class="n">clean_df</span><span class="p">[[</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="s1">&#39;Population&#39;</span><span class="p">]]</span>
+
+<span class="c1"># Eliminar duplicados para obtener un país con su respectiva población única</span>
+<span class="n">historical_population_country_unique</span> <span class="o">=</span> <span class="n">historical_population_country</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+
+<span class="c1"># Mostrar los valores únicos de &#39;Country&#39; y &#39;Population&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">historical_population_country_unique</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;Year&#39;, ylabel=&#39;Gross Domestic Product (GDP)&#39;&gt;
-</pre></div>
-</div>
-<img alt="_images/25325b17b6b7d117f1930e4f43d7309de6f5a0585246579b7068804fa11c092c.png" src="_images/25325b17b6b7d117f1930e4f43d7309de6f5a0585246579b7068804fa11c092c.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">country</span> <span class="o">=</span><span class="s1">&#39;Australia&#39;</span>
-<span class="n">df_line</span> <span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">country</span><span class="p">]</span>
-<span class="n">variables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span><span class="s1">&#39;Gross National Income(GNI) in USD&#39;</span><span class="p">,</span><span class="s1">&#39;Gross Domestic Product (GDP)&#39;</span><span class="p">,]</span>
-<span class="n">df_melted</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">df_line</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">],</span> <span class="n">value_vars</span><span class="o">=</span><span class="n">variables</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">country</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_melted</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;variable&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: title={&#39;center&#39;: &#39;Australia&#39;}, xlabel=&#39;Year&#39;, ylabel=&#39;value&#39;&gt;
-</pre></div>
-</div>
-<img alt="_images/c9863343098270409458f5ab5b4dd651154ba70d90c0e6504815f8f63e259d88.png" src="_images/c9863343098270409458f5ab5b4dd651154ba70d90c0e6504815f8f63e259d88.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s1">: GNI per capita vs Population&#39;</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_line</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Per capita GNI&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Gross National Income(GNI) in USD&#39;</span><span class="p">)</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           Country  Population
+0      Afghanistan    10752971
+1      Afghanistan    11015857
+2      Afghanistan    11286753
+3      Afghanistan    11575305
+4      Afghanistan    11869879
+...            ...         ...
+10507       Zambia    17298054
+10508       Zambia    17835893
+10509       Zambia    18380477
+10510       Zambia    18927715
+10511       Zambia    19473125
+
+[10505 rows x 2 columns]
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: title={&#39;center&#39;: &#39;Australia: GNI per capita vs Population&#39;}, xlabel=&#39;Per capita GNI&#39;, ylabel=&#39;Gross National Income(GNI) in USD&#39;&gt;
-</pre></div>
 </div>
-<img alt="_images/9f40f59acd734c95ddf8999568d87f5d3bc0802887f41be13fe134e0c45b8b49.png" src="_images/9f40f59acd734c95ddf8999568d87f5d3bc0802887f41be13fe134e0c45b8b49.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="mi">2020</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s1">,</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s1">: Imports &amp; Exports&#39;</span><span class="p">)</span>
-<span class="n">df_bar</span> <span class="o">=</span> <span class="n">df_line</span><span class="p">[</span><span class="n">df_line</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">year</span><span class="p">]</span>
-<span class="n">df_bar_melted</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">df_bar</span><span class="p">,</span> <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">],</span> <span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Imports of goods and services&#39;</span><span class="p">,</span> <span class="s1">&#39;Exports of goods and services&#39;</span><span class="p">],</span> <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Category&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Ammount&#39;</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_bar_melted</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Category&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Ammount&#39;</span><span class="p">)</span>
-<span class="c1">#sns.barplot(data=df_bar,x=&#39;Year&#39;,y=[&#39;Imports of goods and services&#39;,&#39;Exports of goods and services&#39;])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: title={&#39;center&#39;: &#39;Australia,2020: Imports &amp; Exports&#39;}, xlabel=&#39;Category&#39;, ylabel=&#39;Ammount&#39;&gt;
-</pre></div>
-</div>
-<img alt="_images/49af721b6126312b647ec362d4127d583d579d5ae7cabb70e24c93160e790074.png" src="_images/49af721b6126312b647ec362d4127d583d579d5ae7cabb70e24c93160e790074.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s1">: Manufacturing vs total value addded&#39;</span><span class="p">)</span>
-<span class="n">df_scatter</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Australia&#39;</span><span class="p">,</span><span class="s1">&#39;Spain&#39;</span><span class="p">])]</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_scatter</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Manufacturing (ISIC D)&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Total Value Added&#39;</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: title={&#39;center&#39;: &#39;Australia: Manufacturing vs total value addded&#39;}, xlabel=&#39;Manufacturing (ISIC D)&#39;, ylabel=&#39;Total Value Added&#39;&gt;
-</pre></div>
-</div>
-<img alt="_images/abccd1a11bce26fe3acb6f60d65af5327f0426c9043c060866be71f5b705f7c6.png" src="_images/abccd1a11bce26fe3acb6f60d65af5327f0426c9043c060866be71f5b705f7c6.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">variables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span><span class="s1">&#39; Agriculture, hunting, forestry, fishing (ISIC A-B) &#39;</span><span class="p">,</span><span class="s1">&#39; Mining, Manufacturing, Utilities (ISIC C-E) &#39;</span><span class="p">,</span><span class="s1">&#39;Manufacturing (ISIC D)&#39;</span><span class="p">]</span>
-<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_scatter</span><span class="p">[</span><span class="n">variables</span><span class="p">],</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">g</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">flatten</span><span class="p">():</span>
-  <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_xlabel</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-  <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_ylabel</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/73a6e9ca0f40caa18033510114e5d2ab15a9479595a79b6145734400468fbe79.png" src="_images/73a6e9ca0f40caa18033510114e5d2ab15a9479595a79b6145734400468fbe79.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="mi">2021</span>
-<span class="n">df_bar2</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">year</span><span class="p">]</span>
-<span class="n">df_bar2</span> <span class="o">=</span> <span class="n">df_bar2</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">countries</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">20</span><span class="p">])]</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;GDP in </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_bar2</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Gross Domestic Product (GDP)&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\aland\AppData\Local\Temp\ipykernel_7592\491066970.py:3: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
-  df_bar2 = df_bar2[df[&#39;Country&#39;].isin(countries[0:20])]
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: title={&#39;center&#39;: &#39;GDP in 2021&#39;}, xlabel=&#39;Gross Domestic Product (GDP)&#39;, ylabel=&#39;Country&#39;&gt;
-</pre></div>
-</div>
-<img alt="_images/453cc3c1a82b908995ba9399476f9fb6263c9135665cc7d3bb5c7be6abe9addc.png" src="_images/453cc3c1a82b908995ba9399476f9fb6263c9135665cc7d3bb5c7be6abe9addc.png" />
-</div>
-</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -875,20 +1020,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="first.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>WORLD ECONOMY DATASET</strong></p>
+        <p class="prev-next-title">Welcome to our Project</p>
       </div>
     </a>
     <a class="right-next"
-       href="third.html"
+       href="second.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Migration to BigQuery</p>
+        <p class="prev-next-title">Data visualization</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -898,6 +1043,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-this-dataset">Why Use This Dataset?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
