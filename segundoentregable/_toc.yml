@@ -4,6 +4,6 @@
 format: jb-book
 root: intro
 chapters:
-- file: firstglance.ipynb
+- file: first.ipynb
 - file: second.ipynb
 - file: third.ipynb
