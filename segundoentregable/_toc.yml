@@ -6,3 +6,4 @@ root: intro
 chapters:
 - file: firstglance.ipynb
 - file: second.ipynb
+- file: third.ipynb
